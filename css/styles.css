@@ -4,6 +4,8 @@ body{
 #shoutDisplay{
   display: none;
 }
+
+
 .jumbotron{
   Border: 5px solid black;
   text-align: center;
@@ -33,4 +35,5 @@ body{
   color: lightgrey;
   text-align: center;
 }
+
 
