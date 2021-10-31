@@ -4,7 +4,6 @@ body{
 #shoutDisplay{
   display: none;
 }
-
 .jumbotron{
   Border: 5px solid black;
   text-align: center;
@@ -15,8 +14,23 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.btn-primary{
+  border: 5px solid black;
+  background-color: rgb(54, 53, 53);
+}
+
+.btn-primary:hover{
+  border: 5px solid darkslategray;
+  background-color: slategray;
+}
+
+#shoutForm{
+  text-align: center;
+}
+
 #shoutDisplay{
   margin-top: 10%;
   color: lightgrey;
   text-align: center;
 }
+
