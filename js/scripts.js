@@ -1,7 +1,7 @@
 $(document).ready(function() {
   let shoutMemory= [];
   $("#shoutForm").submit(function(event) {
-    shoutMemory.push($("input#shout1").val());
+    shoutMemory.push($("#shout1").val());
     $("#shoutDisplay").show();
     $("#shoutForm").trigger("reset");
     $("#shoutDisplay").fadeOut(7500);

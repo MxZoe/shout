@@ -1,4 +1,8 @@
 body{
-  background-color: rgb(35,34,34);
+  background-color: rgb(40,39,39);
+  color:lightgray;
 };
 
+#userStats{
+  text-align: right;
+};
