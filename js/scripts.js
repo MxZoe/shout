@@ -1,22 +1,17 @@
-const shoutMemory= [];
-
-function random(anArray){
-  return 1+Math.random()*anArray.length;
-}
+let shoutMemory= [];
 
 $(document).ready(function() {
   $("#shoutForm").submit(function(event) {
-    shoutMemory.push($("#shout1").val());
-    $("#shoutDisplay").show();
-    $("#shoutForm").trigger("reset");
-    $("#shoutDisplay").fadeOut(7500);
+    if("#shout1".val() != null){
+      shoutMemory.push($("#shout1").val());
+      $("#shoutDisplay").show();
+      $("#shoutForm").trigger("reset");
+      $("#shoutDisplay").fadeOut(7500);
+    }
+    else{
+      $("#shoutDisplay").hide();
+    }
     event.preventDefault();
   });
 
-  document.getElementById("button-2").addEventListener("click", function(){
-    $("retrieveDisplay").show()
-    if(shoutMemory.length <= 0){
-      $("#
-    }
-  });
 });
