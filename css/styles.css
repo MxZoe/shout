@@ -5,6 +5,9 @@ body{
   display: none;
 }
 
+#silence{
+  display: none;
+}
 
 .jumbotron{
   Border: 5px solid black;

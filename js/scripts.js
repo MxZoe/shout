@@ -1,5 +1,10 @@
+const shoutMemory= [];
+
+function random(anArray){
+  return 1+Math.random()*anArray.length;
+}
+
 $(document).ready(function() {
-  let shoutMemory= [];
   $("#shoutForm").submit(function(event) {
     shoutMemory.push($("#shout1").val());
     $("#shoutDisplay").show();
@@ -9,6 +14,9 @@ $(document).ready(function() {
   });
 
   document.getElementById("button-2").addEventListener("click", function(){
-    window.location.href="void.html"
+    $("retrieveDisplay").show()
+    if(shoutMemory.length <= 0){
+      $("#
+    }
   });
 });
