@@ -1,17 +1,14 @@
 $(document).ready(function() {
-const shoutArray= [];
+  let shoutMemory= [];
   $("#shoutForm").submit(function(event) {
-    const shout = $("input#shout1").val();
-    shoutArray.push(shout);
+    shoutMemory.push($("input#shout1").val());
     $("#shoutDisplay").show();
     $("#shoutForm").trigger("reset");
     $("#shoutDisplay").fadeOut(7500);
-
     event.preventDefault();
   });
+
   document.getElementById("button-2").addEventListener("click", function(){
-    const length = shoutArray.length - 1;
-    const randNum = 1+ Math.random() * length;
-    $(".retrieved").prepend(shoutArray[randNum]);
+    window.location.href="void.html"
   });
 });
